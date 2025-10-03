@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid #000;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+
+      thead {
+        background: #777777;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col style="background-color: bisque" />
+        <col span="2" style="background-color: aqua" />
+        <col style="background-color: peru" />
+      </colgroup>
+      <thead>
+        <tr>
+          <td>性別</td>
+          <td>姓名</td>
+          <td>電話</td>
+          <td>信箱</td>
+          <td>興趣</td>
+          <td>年齡</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="2">男</th>
+
+          <td>Gary Johnston</td>
+          <td>(742) 808-7490</td>
+          <td>tonit@mer.vu</td>
+          <td>看書</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Nellie Vega</td>
+          <td>(425) 538-5661</td>
+          <td>ug@iji.uz</td>
+          <td>爬山</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th rowspan="2">女</th>
+          <td>Inez Warren</td>
+          <td>(283) 377-8529</td>
+          <td>enusuk@un.ae</td>
+          <td>潛水</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Inez Warren</td>
+          <td>(283) 377-8529</td>
+          <td>enusuk@un.ae</td>
+          <td>潛水</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th colspan="5">年齡平均值</th>
+        <td>20</td>
+      </tfoot>
+    </table>
+  </body>
+</html>
