@@ -6,9 +6,10 @@ td {
   text-align: center;
   vertical-align: middle;
 }
+
 th,
 td {
-  padding: 10px;
+  padding: 5px;
 }
 .diagonal-line {
   background-image: linear-gradient(to top right, white 49%, black, white 51%);
@@ -16,4 +17,12 @@ td {
 
 .vertical-text {
   writing-mode: vertical-lr;
+}
+
+.big-text {
+  font-size: 1.2em;
+}
+
+.big-letter-spacing {
+  letter-spacing: 3em;
 }
