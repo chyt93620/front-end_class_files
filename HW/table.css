@@ -8,6 +8,9 @@ td {
   vertical-align: middle;
   padding: 5px;
 }
+table {
+  border: 5px double #000;
+}
 
 th {
   line-height: 1.5;
