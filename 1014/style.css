@@ -1,0 +1,24 @@
+section {
+  margin: 100px;
+}
+
+.fake_button {
+  background-color: rgb(55, 55, 161);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: rgb(255, 100, 100);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.cake {
+  color: #626264;
+}
+.cake_highlight {
+  color: #13ab67;
+}
