@@ -1,0 +1,19 @@
+section {
+  margin: 100px;
+  width: 900px;
+}
+input {
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: rgb(55, 55, 161);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+textarea {
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 150px;
+}

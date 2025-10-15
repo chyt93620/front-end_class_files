@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <section>
+      <form action="#" method="get">
+        <h2>登入頁面</h2>
+        <div>
+          <label>進度</label>
+          <progress value="70" max="100">70%</progress>
+        </div>
+        <label for="username">帳號</label>
+        <input name="username" type="text" placeholder="帳號" />
+        <!-- prettier-ignore -->
+        <label>密碼
+            <input 
+            name="password" 
+            type="password" 
+            placeholder="密碼" 
+            required
+            />
+        </label>
+        <input type="email" placeholder="電子郵件" />
+        <br />
+        <label
+          >數字
+          <input type="number" min="0" max="100" />
+        </label>
+        <label
+          >日期
+          <input type="date" />
+        </label>
+        <input type="color" />
+        <br />
+        <label>
+          <input type="range" min="0" max="100" />
+        </label>
+        <input type="file" />
+        <br />
+        <input type="search" />
+        <br />
+        <input type="hidden" value="12345" />
+        <br />
+        <p>國家</p>
+        <input type="radio" name="country" value="Taiwan" />台灣
+        <input type="radio" name="country" value="Japan" />日本
+        <input type="radio" name="country" value="USA" />美國
+        <input type="radio" name="country" value="UK" />英國
+        <br />
+        <fieldset>
+          <input type="checkbox" name="interest" value="movie" />電影
+          <input type="checkbox" name="interest" value="music" />音樂
+          <input type="checkbox" name="interest" value="travel" />旅遊
+          <input type="checkbox" name="interest" value="reading" />閱讀
+          <input type="checkbox" name="interest" value="sports" />運動
+        </fieldset>
+        <div>
+          <select name="city">
+            <option value="" disabled selected>請選擇城市</option>
+            <option value="Taipei">台北市</option>
+            <option value="NewTaipei">新北市</option>
+            <option value="Taichung">台中市</option>
+            <option value="Tainan">台南市</option>
+            <option value="Kaohsiung">高雄市</option>
+          </select>
+
+          <select name="food">
+            <optgroup label="主食">
+              <option value="rice">飯</option>
+              <option value="noodle">麵</option>
+              <option value="bread">麵包</option>
+            </optgroup>
+            <optgroup label="配菜">
+              <option value="vegetable">青菜</option>
+              <option value="meat">肉類</option>
+              <option value="egg">蛋</option>
+            </optgroup>
+            <optgroup label="飲料">
+              <option value="tea">茶</option>
+              <option value="coffee">咖啡</option>
+              <option value="juice">果汁</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="留言"
+          ></textarea>
+        </div>
+        <br />
+
+        <button type="submit">登入</button>
+        <button type="reset">清空</button>
+      </form>
+    </section>
+  </body>
+</html>

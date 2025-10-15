@@ -1,15 +1,43 @@
 section {
   margin: 100px;
+  width: 900px;
+}
+p {
+  line-height: 1.5;
+  color: #555;
+}
+.card_title {
+  font-size: larger;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
 }
 
-.fake_button {
+.card {
+  background-color: rgb(188, 216, 175);
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.card2 {
+  background-color: rgb(191, 175, 216);
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.blue_button {
   background-color: rgb(55, 55, 161);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
 }
 
-.button {
+.red_button {
   background-color: rgb(255, 100, 100);
   color: white;
   padding: 10px 20px;
