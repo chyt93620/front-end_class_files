@@ -54,7 +54,6 @@
         <div class="form-container">
           <label for="birthday">生日</label> <br />
           <p class="small-text">日期</p>
-          <br />
           <div class="input-date-wedth">
             <input type="date" class="input" id="birthday" />
             <span class="bar"></span>
@@ -64,34 +63,65 @@
           <label for="textarea">想跟老師說悄悄話</label>
           <br />
           <br />
-          <input type="textarea" class="input" id="textarea" />
+          <textarea
+            class="input"
+            id="textarea"
+            placeholder="您的回答"
+          ></textarea>
           <span class="bar"></span>
         </div>
         <div class="form-container">
           <label> 喜歡的顏色</label>
           <br />
           <br />
-          <input type="radio" name="color" value="yellow" />黃色
-          <br />
-          <input type="radio" name="color" value="green" />綠色
-          <br />
-          <input type="radio" name="color" value="red" />紅色
+          <fieldset>
+            <input type="radio" name="color" value="yellow" />黃色
+            <br />
+            <input type="radio" name="color" value="green" />綠色
+            <br />
+            <input type="radio" name="color" value="red" />紅色
+          </fieldset>
         </div>
         <div class="form-container">
           <label>喜歡吃的飲食類型</label>
           <br />
           <br />
-          <input type="checkbox" name="food" id="chinese-food" />中式
-          <br />
-          <input type="checkbox" name="food" id="italian-food" />義式
-          <br />
-          <input type="checkbox" name="food" id="japanese-food" />日式
-          <br />
-          <input type="checkbox" name="food" id="korean-food" />韓式
-          <br />
-          <input type="checkbox" name="food" id="american-food" />美式
-          <br />
-          <input type="checkbox" name="food" id="thai-food" />泰式
+          <fieldset>
+            <div>
+              <label for="chinese-food"
+                ><input
+                  type="checkbox"
+                  name="food"
+                  id="chinese-food"
+                />中式</label
+              >
+            </div>
+            <div>
+              <label for="italian-food">
+                <input type="checkbox" name="food" id="italian-food" />義式
+              </label>
+            </div>
+            <div>
+              <label for="japanese-food">
+                <input type="checkbox" name="food" id="japanese-food" />日式
+              </label>
+            </div>
+            <div>
+              <label for="korean-food">
+                <input type="checkbox" name="food" id="korean-food" />韓式
+              </label>
+            </div>
+            <div>
+              <label for="american-food">
+                <input type="checkbox" name="food" id="american-food" />美式
+              </label>
+            </div>
+            <div>
+              <label for="thai-food">
+                <input type="checkbox" name="food" id="thai-food" />泰式
+              </label>
+            </div>
+          </fieldset>
         </div>
 
         <div>
