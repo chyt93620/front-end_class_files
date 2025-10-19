@@ -1,7 +1,7 @@
-body {
+body,
+footer {
   background-color: #f0ebf8;
-}
-section {
+  font-family: "Roboto", sans-serif;
   width: 640px;
   margin: 0 auto;
 }
@@ -9,6 +9,10 @@ section {
 h1 {
   font-size: 32px;
   margin: 0 0 12px;
+}
+
+hr {
+  color: rgb(218, 220, 224);
 }
 
 textarea {
@@ -42,13 +46,18 @@ fieldset {
   margin: 12px 0 0 0;
 }
 
-select,
-::picker(select) {
-  appearance: base-select;
-  border-radius: 5px;
-}
 select {
-  border: #000000;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 3px;
+  width: 170px;
+  height: 50px;
+  margin: 20px 0;
+  color: black;
+}
+
+select:focus {
+  border: 1px solid #e0e0e0;
 }
 
 /*
@@ -127,14 +136,18 @@ input:focus {
   width: 130px;
 }
 
-.line {
-  border-top: 1px solid rgb(218, 220, 224);
-}
-
 .title-text {
   font-size: 14px;
   padding: 10px 25px 12px;
-  line-height: 1.5;
+  line-height: 1.4;
+  color: rgb(32, 33, 36);
+}
+
+.login-gray {
+  color: rgb(95, 99, 104);
+}
+
+.title-gray-text {
   color: rgb(32, 33, 36);
 }
 
@@ -163,11 +176,12 @@ input:focus {
   color: white;
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
 }
 .button-reset {
   color: rgb(103, 58, 183);
   font-size: 14px;
-  margin: 0 0 0 300px;
+  cursor: pointer;
 }
 
 .small-text {
@@ -176,17 +190,43 @@ input:focus {
   margin-top: 10px;
 }
 
-.custom-select .label {
-  padding: 5px;
-  width: 100px;
-  border: 1px solid rgb(175, 175, 175);
-  border-radius: 5px;
-}
-
 .required-text {
   color: #d93025;
 }
 
 .form-container-title {
   margin: 12px 0;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.footer-info {
+  padding: 10px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.footer-little-gray-text {
+  font-size: 12px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.a-gary {
+  color: rgba(0, 0, 0, 0.66);
+}
+.a-blue {
+  color: rgb(26, 115, 232);
+}
+.a-underline {
+  text-decoration: underline;
+}
+.gary-text {
+  font-size: 25px;
+  color: rgba(35, 35, 35, 0.66);
 }

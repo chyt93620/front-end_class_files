@@ -7,26 +7,33 @@
 
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="form.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
   <body>
-    <section class="form">
+    <main class="form">
       <form action="#" method="get">
-        <div class="form-title">
+        <section class="form-title">
           <div class="title-text">
             <h1>F2E02 表單練習</h1>
-            <p>僅供新尖兵 F2E02 表單切版練習作業</p>
+            <p class="title-gray-text">僅供新尖兵 F2E02 表單切版練習作業</p>
           </div>
-          <div class="line"></div>
+          <hr />
           <div class="title-text">
-            <p>登入 Google 即可儲存進度。瞭解詳情</p>
+            <p>
+              <a class="a-blue" href="#">登入 Google </a
+              ><span class="login-gray">即可儲存進度。 </span
+              ><a class="a-blue" href="#">瞭解詳情</a>
+            </p>
           </div>
-          <div class="line"></div>
+          <hr />
           <div class="title-text">
             <p class="required-text">* 表示必填問題</p>
           </div>
-        </div>
+        </section>
 
-        <div class="form-container">
+        <section class="form-container">
           <label class="form-container-title" for="name">姓名</label>
           <span class="required-text">*</span>
           <br />
@@ -41,8 +48,8 @@
             />
             <span class="bar"></span>
           </div>
-        </div>
-        <div class="form-container">
+        </section>
+        <section class="form-container">
           <label class="form-container-title" for="email">信箱</label>
           <span class="required-text">*</span>
           <br />
@@ -57,16 +64,16 @@
             />
             <span class="bar"></span>
           </div>
-        </div>
-        <div class="form-container">
+        </section>
+        <section class="form-container">
           <label class="form-container-title" for="birthday">生日</label> <br />
           <p class="small-text">日期</p>
           <div class="input-date-wedth">
             <input type="date" class="input" id="birthday" />
             <span class="bar"></span>
           </div>
-        </div>
-        <div class="form-container">
+        </section>
+        <section class="form-container">
           <label class="form-container-title" for="textarea"
             >想跟老師說悄悄話</label
           >
@@ -78,8 +85,8 @@
             placeholder="您的回答"
           ></textarea>
           <span class="bar"></span>
-        </div>
-        <div class="form-container">
+        </section>
+        <section class="form-container">
           <p>喜歡的顏色</p>
           <fieldset>
             <input type="radio" name="color" value="yellow" />黃
@@ -88,8 +95,8 @@
             <br />
             <input type="radio" name="color" value="red" />紅
           </fieldset>
-        </div>
-        <div class="form-container">
+        </section>
+        <section class="form-container">
           <p class="form-container-title">喜歡吃的飲食類型</p>
           <fieldset>
             <div>
@@ -127,14 +134,12 @@
               </label>
             </div>
           </fieldset>
-        </div>
-        <div class="form-container">
+        </section>
+        <section class="form-container">
           <p>最想去的國家 (使用 optgroup 將選項分為不同洲)</p>
 
           <select class="custom-select" name="country">
-            <button>
-              <span class="label">選擇</span>
-            </button>
+            <option value="" disabled selected>選擇</option>
             <optgroup label="亞洲">
               <option value="Japan">日本</option>
               <option value="Korea">韓國</option>
@@ -149,18 +154,30 @@
               <option value="American">美國</option>
             </optgroup>
           </select>
-        </div>
+        </section>
 
-        <div>
+        <section class="button-div">
           <input class="button-submit" type="submit" value="提交" />
           <input class="button-reset" type="reset" value="清除表單" />
-        </div>
+        </section>
       </form>
-    </section>
+    </main>
 
     <footer>
-      <section class="footer">
-        <h1>google表單</h1>
+      <section>
+        <p class="footer-little-gray-text">請勿利用 Google 表單送出密碼。</p>
+        <div class="footer-info">
+          <p class="footer-little-gray-text">
+            這份表單是在 五倍紅寶石程式資訊教育股份有限公司 中建立。 -<a
+              href="#"
+              class="a-gray a-underline a-underline"
+              >聯絡表單擁有者</a
+            ><br />
+            這份表單很可疑嗎？ <a href="#" class="a-gray a-underline">報告</a>
+          </p>
+          <br />
+          <h1 class="gary-text">Google表單</h1>
+        </div>
       </section>
     </footer>
   </body>
