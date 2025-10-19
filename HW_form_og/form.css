@@ -60,18 +60,73 @@ select:focus {
   border: 1px solid #e0e0e0;
 }
 
-input,
-textarea {
+/*
+
+變色動畫(簡易版)
+
+input {
   border-bottom: 1px solid rgb(218, 220, 224);
   font-size: 16px;
   outline: none;
   transition: border-bottom-color 0.3s ease-in-out;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
   border-bottom: 2px solid rgb(103, 58, 183);
 }
+
+*/
+
+.input {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgb(218, 220, 224);
+  background: transparent;
+  padding: 0 0 2px;
+  margin: 5px 0 5px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+/* 下劃線動畫開始 */
+/* 參考https://www.youtube.com/watch?v=0alOyHRtvhY */
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar::before,
+.bar::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 5px;
+  position: absolute;
+  background: rgb(103, 58, 183);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar::before {
+  left: 50%;
+}
+
+.bar::after {
+  right: 50%;
+}
+
+.input:focus ~ .bar::before,
+.input:focus ~ .bar::after {
+  width: 50%;
+}
+
+/* 這是下劃線動畫結束 */
 
 .input-text-wedth {
   width: 300px;
