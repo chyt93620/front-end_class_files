@@ -67,13 +67,16 @@ textarea {
   outline: none;
 }
 
-input:focus,
-textarea:focus {
-  border-bottom: 2px solid rgb(103, 58, 183);
-}
 
 img {
   opacity: 0.6;
+}
+
+
+
+.input:focus,
+.textarea:focus {
+  border-bottom: 2px solid rgb(103, 58, 183);
 }
 
 .input-text-wedth {
