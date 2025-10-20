@@ -65,12 +65,15 @@ textarea {
   border-bottom: 1px solid rgb(218, 220, 224);
   font-size: 16px;
   outline: none;
-  transition: border-bottom-color 0.3s ease-in-out;
 }
 
 input:focus,
 textarea:focus {
   border-bottom: 2px solid rgb(103, 58, 183);
+}
+
+img {
+  opacity: 0.6;
 }
 
 .input-text-wedth {
@@ -123,10 +126,22 @@ textarea:focus {
   padding: 6px 22px;
   cursor: pointer;
 }
+
+.button-submit:hover {
+  background-color: #7349bd;
+}
+
 .button-reset {
-  color: rgb(103, 58, 183);
+  border: none;
   font-size: 14px;
+  color: rgb(103, 58, 183);
+  border-radius: 4px;
+  padding: 6px 2px;
   cursor: pointer;
+}
+
+.button-reset:hover {
+  background-color: #eae7f8;
 }
 
 .small-text {
@@ -171,7 +186,9 @@ textarea:focus {
 .a-underline {
   text-decoration: underline;
 }
-.gary-text {
+.bottom-title {
   font-size: 25px;
   color: rgba(35, 35, 35, 0.66);
+  display: flex;
+  justify-content: center;
 }
