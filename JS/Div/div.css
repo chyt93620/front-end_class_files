@@ -1,0 +1,15 @@
+.divBig {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  position: relative; /* 設為相對定位，作為小 div 的定位基準 */
+}
+
+.divSmall {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  position: absolute; /* 絕對定位，才能自由移動與重疊 */
+  top: 50px;
+  left: 50px;
+}
