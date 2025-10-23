@@ -65,14 +65,12 @@ textarea {
   border-bottom: 1px solid rgb(218, 220, 224);
   font-size: 16px;
   outline: none;
+  margin-top: 20px;
 }
-
 
 img {
   opacity: 0.6;
 }
-
-
 
 .input:focus,
 .textarea:focus {
@@ -155,10 +153,6 @@ img {
 
 .required-text {
   color: #d93025;
-}
-
-.form-container-title {
-  margin: 12px 0;
 }
 
 .button-div {

@@ -1,0 +1,125 @@
+h1 {
+  font-size: 30px;
+}
+
+hr {
+  color: rgb(243, 243, 243);
+}
+
+details {
+  padding: 5px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+summary {
+  padding: 15px;
+  font-size: 16px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+}
+
+.btn-green {
+  background-color: #13ab67;
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 12px 25px;
+  margin: 20px;
+  display: flex;
+  justify-self: center;
+}
+
+.fqa-section {
+  margin: 0 auto;
+  width: 600px;
+}
+.faq-link {
+  color: #13ab67;
+}
+
+.box {
+  background-color: #faf;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  padding: 30px 10px 30px 50px;
+}
+
+.in {
+  background-color: #ffa;
+  height: 100%;
+}
+
+/*---------------------*/
+
+.card-container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #c5fffc;
+  overflow: hidden;
+}
+
+.card {
+  width: 168px;
+  background-color: #ffa;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(131, 22, 22);
+  float: left;
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+/*------一般解------*/
+
+.card-container2 {
+  width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
+  background-color: #c5fffc;
+  overflow: hidden;
+}
+
+.card2 {
+  width: 183px;
+  background-color: #ffa;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid rgb(131, 22, 22);
+  float: left;
+}
+
+/*------------暴力解------------*/
+/* 第一張卡片全外距20px，剩下都 上右下20px,左0px */
+
+.card-container3 {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #c5fffc;
+  overflow: hidden;
+}
+
+.card3-first {
+  width: 183px;
+  background-color: #ffa;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(131, 22, 22);
+  float: left;
+}
+
+.card3 {
+  width: 183px;
+  background-color: #ffa;
+  margin: 20px 20px 20px 0;
+  padding: 20px;
+  border: 1px solid rgb(131, 22, 22);
+  float: left;
+}
