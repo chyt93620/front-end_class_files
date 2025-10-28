@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "hello": "echo 123",
+    "world": "echo 456"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dayjs": "^1.11.18"
+  },
+  "devDependencies": {
+    "vite": "^7.1.12"
+  }
+}
