@@ -1,0 +1,63 @@
+/* id跟class選取 */
+/* .div01 {
+  color: aqua;
+}
+#div01 {
+  color: blue;
+} */
+
+/* 多個class選取 */
+/* .box01,
+.box02 {
+  background-color: blueviolet;
+  height: 20px;
+  width: 20px;
+} */
+
+/*組合式宣告*/
+/* div.box01#box-id-1 {
+  background-color: blueviolet;
+  height: 20px;
+  width: 20px;
+*/
+
+/* 層疊式宣告 */
+/* .news-list li {
+  border: 1px solid red;
+}
+.news-list .news-list-item {
+  border: 1px solid red;
+} */
+
+/* .news-list li {
+  border: 1px solid red;
+} */
+
+/* .news-list-item a{ } */
+
+/* 只有第一個會被選到 */
+/* .h1 + .p{}  */
+
+/* .item + .item {
+color: brown;
+} */
+
+/* .first-item > .secend-item {
+  border: 1px solid red;
+} */
+
+/* a[href] {
+  color: orange;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+.alink{
+  color: red !important ;
+} */
+
+/* .box :not(div) {
+  color: aqua;
+} */
