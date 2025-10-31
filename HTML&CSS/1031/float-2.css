@@ -1,0 +1,21 @@
+section {
+  width: 300px;
+  height: 400px;
+  background-color: bisque;
+}
+
+.floatImgBig {
+  height: 180px;
+  width: 180px;
+  background-color: aqua;
+  margin: 10px;
+  float: left;
+}
+
+.floatImgSmall {
+  height: 80px;
+  width: 80px;
+  background-color: aqua;
+  margin: 10px;
+  float: right;
+}

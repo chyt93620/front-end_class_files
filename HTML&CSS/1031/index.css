@@ -1,0 +1,76 @@
+p {
+  margin: 20px 0;
+}
+
+.caveat-font {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.sectionBody {
+  margin: 100px;
+}
+
+/* ------------------------------ */
+
+header {
+  background-color: aquamarine;
+  height: 64px;
+}
+
+nav {
+  /* text-align: right; */
+  direction: rtl;
+  /* -----好像還沒教的方式----- */
+  /* display: flex;
+  justify-self: center; */
+
+  /* -----文字水平置中----- */
+  /* text-align: center; */
+  /*  */
+  /* ------外距+寬度------ */
+  /* margin: 0 auto;
+  width: 500px; */
+}
+
+nav a {
+  background-color: #faa;
+  line-height: 64px;
+  /* 改變元素本身的屬性 */
+  display: inline-block;
+
+  /* border-radius: 3px; */
+  /* padding: 5px 10px; */
+  /* margin: 10px; */
+}
+
+/* 原本的寫法，不夠聰明，而且剛學過新用法 */
+/* .headerBtn {
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 10px;
+} */
+
+/* ---------------- */
+
+.spacing {
+  letter-spacing: 20px;
+  word-spacing: 40px;
+}
+
+/*------------------*/
+
+.bgImg {
+  /* background-color: #afa; */
+  background: url(https://media.tenor.com/1MfIiC1yllEAAAAM/cat-huh-cat-huh-etr.gif)
+      no-repeat center left 20px / 100px 100px,
+    url(https://media.tenor.com/8VuZc8I8f7EAAAAj/oiia-cat.gif) no-repeat right
+      100px bottom 40px /300px 200px,
+    linear-gradient(to right bottom, aquamarine, purple);
+  height: 600px;
+}

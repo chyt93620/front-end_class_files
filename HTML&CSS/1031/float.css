@@ -1,0 +1,37 @@
+section {
+  margin: 100px;
+}
+
+p {
+  padding: 10px;
+  font-size: 12px;
+}
+
+h2 {
+  padding: 5px;
+}
+
+.floatCard {
+  background-color: rgb(188, 255, 233);
+  height: 150px;
+}
+
+.floatImg {
+  width: 200px;
+  float: left;
+  padding: 10px 20px;
+}
+
+.floatCard:nth-child(even) {
+  background-color: rgb(235, 213, 255);
+}
+
+.floatCard:nth-child(even) Img {
+  float: right;
+}
+
+/* ------------------------------ */
+
+.clear {
+  clear: both;
+}
