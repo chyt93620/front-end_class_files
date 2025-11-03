@@ -7,7 +7,7 @@
 function highestScoreWord(input) {
 
 
-
+    
 
 
 
