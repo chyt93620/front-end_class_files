@@ -1,10 +1,31 @@
-section {
+.box-wrap {
   width: 300px;
-  height: 400px;
+  margin: 0 auto;
   background-color: bisque;
 }
 
-.floatImgBig {
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: aquamarine;
+  margin: 10px;
+  float: left;
+}
+
+.box:nth-of-type(3n-2) {
+  width: 180px;
+  height: 180px;
+}
+
+.box:nth-of-type(6n-2) {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/* .floatImgBig {
   height: 180px;
   width: 180px;
   background-color: aqua;
@@ -18,4 +39,4 @@ section {
   background-color: aqua;
   margin: 10px;
   float: right;
-}
+} */

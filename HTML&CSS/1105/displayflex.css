@@ -1,0 +1,39 @@
+section {
+  margin: 100px;
+}
+
+.se {
+  background-color: rgb(143, 168, 145);
+}
+.box-wrap {
+  display: flex;
+justify-content: space-around;
+}
+
+.box-wrap :nth-of-type(1) {
+  background-color: rgb(147, 238, 238);
+}
+
+.box-wrap :nth-of-type(2) {
+  background-color: bisque;
+}
+.box-wrap :nth-of-type(3) {
+  background-color: rgb(203, 148, 255);
+}
+
+.box {
+  width: 200px;
+}
+
+/*-------------------------*/
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.boxbox {
+  height: 200px;
+  background-color: aqua;
+  width: 100%;
+}
