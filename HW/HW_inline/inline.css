@@ -65,7 +65,7 @@ body {
   background-repeat: repeat;
   background-position: 50% 50%;
   height: 638px;
-  /*------background img----------*/
+  /*------background img end----------*/
   padding-top: 120px;
   display: flex;
   justify-content: center;
@@ -106,19 +106,99 @@ body {
 }
 
 /*--------第二區--------*/
-.mainSec {
+.mainTop2nd {
   background-image: url(https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_country.png);
   background-size: cover;
   background-repeat: repeat;
   background-position: 50% 50%;
   height: 586px;
-  /*------background img----------*/
+  /*------background img end----------*/
   padding-top: 120px;
   display: flex;
   justify-content: center;
 }
 
-.mainSec p {
+.mainTop2nd p {
   color: #333333;
   text-align: center;
+  font-size: 17px;
+  line-height: 2;
+}
+
+/*--------第三區--------*/
+
+.mainTop3rd {
+  text-align: center;
+  line-height: 3;
+}
+
+.mainTop3rd h2 {
+  color: #ec6300;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.mainTop3rd h1 {
+  color: #252932;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/*--------功能介紹區--------*/
+
+.mainFunction {
+  background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background1.png),
+    url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png);
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  height: 2700px;
+  /*------background img end----------*/
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.floatImg {
+  float: left;
+  width: 560px;
+  height: 490.55px;
+  margin-right: 45px;
+  margin-top: 95px;
+}
+
+.box {
+  display: flex;
+}
+
+/*-----列表------*/
+
+.boxUl h2 {
+  text-align: right;
+  margin: 0 400px 60px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #064c8c;
+}
+
+.boxUl div {
+  display: flex;
+  width: 560px;
+  line-height: 2;
+  color: #252932;
+  padding: 0 0 30px;
+}
+
+.boxUl div div {
+  display: block;
+}
+.boxUl div h3 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.boxUl div img {
+  margin: 7px 30px 0 0;
+  width: 44px;
+  height: 44px;
 }
