@@ -1,0 +1,6 @@
+      <img
+        src="https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_%E9%A6%96%E5%9C%96.png"
+      />
+      <img
+        src="https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_country.png"
+      />
