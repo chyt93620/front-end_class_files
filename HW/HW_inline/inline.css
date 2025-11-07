@@ -67,12 +67,11 @@ body {
   height: 638px;
   /*------background img end----------*/
   padding-top: 120px;
-  display: flex;
-  justify-content: center;
 }
 
 .mainTop div {
-  padding-right: 765px;
+  max-width: 1160px;
+  margin: 0 auto;
 }
 .mainTop div span {
   color: #ff6337;
@@ -153,25 +152,29 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: top center, bottom center;
   height: 2700px;
+
   /*------background img end----------*/
-  padding-top: 45px;
-  display: flex;
-  justify-content: center;
+  margin: 45px 0 20px;
 }
 
 .floatImg {
   float: left;
-  width: 560px;
-  height: 490.55px;
-  margin-right: 45px;
-  margin-top: 95px;
+  max-width: 560px;
+  max-height: 490.55px;
+  margin: 95px 45px 321px 0;
 }
 
 .box {
-  display: flex;
+  max-width: 1200px;
+  justify-self: center;
 }
 
 /*-----列表------*/
+
+.boxUl {
+  max-width: 560px;
+  float: right;
+}
 
 .boxUl h2 {
   text-align: right;
@@ -183,14 +186,13 @@ body {
 
 .boxUl div {
   display: flex;
-  width: 560px;
   line-height: 2;
   color: #252932;
-  padding: 0 0 30px;
+  padding: 0 0 25px;
 }
 
 .boxUl div div {
-  display: block;
+  flex-wrap: wrap;
 }
 .boxUl div h3 {
   font-size: 19px;
@@ -201,4 +203,25 @@ body {
   margin: 7px 30px 0 0;
   width: 44px;
   height: 44px;
+}
+
+/*----------求助AI----------*/
+/*----不管怎麼選都選不到指定的區域----*/
+/* 將偶數 .box 裡的 .floatImg 改為向右浮動 */
+.mainFunction > .box:nth-of-type(even) .floatImg {
+  float: right;
+  margin-left: 45px;
+  /* 原先 left 排版是使用 margin-right:45px，向右浮動時改為左邊間距 */
+  margin-right: 0;
+  /* 若需要覆蓋既有樣式並保證生效，可在這裡加上更高權重或使用 !important（不推薦除非必要） */
+}
+
+/*-------合作夥伴區------*/
+
+.company {
+}
+
+.company h1 {
+  text-align: center;
+  font-size: 50px;
 }

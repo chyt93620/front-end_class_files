@@ -1,0 +1,64 @@
+section {
+  margin: 100px;
+}
+
+.box-wrap {
+  display: flex;
+  background-color: rgb(143, 168, 145);
+}
+.box {
+  height: 100px;
+  /* width: 100%; */
+  /* flex-basis: 100%; */
+  /* 33.33% */
+  flex-grow: 1;
+}
+
+.box1 {
+  background-color: rgb(147, 238, 238);
+}
+
+.box2 {
+  background-color: bisque;
+  /* order: -1; */
+  /* 修改排序 */
+}
+.box3 {
+  background-color: rgb(203, 148, 255);
+}
+
+/*-------------------------*/
+
+.cardGroup {
+  background-color: rgb(116, 105, 92);
+  display: flex;
+}
+
+.card {
+  flex-grow: 1;
+  height: 100px;
+}
+
+.card1 {
+  background-color: rgb(167, 235, 235);
+}
+
+.card2 {
+  background-color: rgb(185, 231, 142);
+}
+
+.card3 {
+  background-color: gold;
+}
+
+/*-----------------------*/
+
+.icon {
+  font-size: 50px;
+}
+
+/*----------------------------*/
+::selection {
+  background: orangered;
+  color: white;
+}
