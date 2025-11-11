@@ -251,21 +251,153 @@ body {
 }
 
 .companyList {
-  max-width: 1120px;
+  max-width: 1160px;
+  padding: 0px 20px;
   margin: 50px auto 0;
 }
 
 .companyList div {
   display: flex;
+  justify-content: center;
+}
+.companyList div:nth-of-type(2) {
+  display: flex;
   justify-content: right;
 }
-
 .companyList div:nth-of-type(4) {
   display: flex;
-flex-direction: row-reverse;
+  justify-content: left;
 }
 
 .companyList img {
-  max-width: 17%;
-  height: auto;
+  max-height: 150px;
+  min-height: 120px;
+}
+
+/*---------------表單區----------------*/
+
+.formContainer {
+  background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  height: 2445.45px;
+  /*------background img end----------*/
+  margin-top: 50px;
+}
+
+.formContainer h1 {
+  text-align: center;
+  font-size: 29.3px;
+  font-weight: 700;
+  color: #ff6600;
+  line-height: 2;
+}
+
+.formContainer h1:nth-of-type(2) {
+  color: #252932;
+}
+
+.formContainer h2 {
+  text-align: center;
+  font-size: 18.6px;
+  color: #252932;
+  margin: 50px 0;
+}
+
+.form {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 75px 10px 100px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.form h1 {
+  text-align: center;
+  font-size: 26.6px;
+  color: #064c8c;
+  font-weight: 700;
+}
+
+.formP {
+  text-align: center;
+  font-size: 16px;
+  color: #252932;
+  font-weight: 700;
+  line-height: 3.2;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.blue {
+  color: #000080;
+}
+
+.form p {
+  line-height: 2;
+  margin-top: 25px;
+  font-weight: 350;
+}
+
+.inputContainer {
+  padding: 50px 0 10px;
+}
+
+.inputContainer div {
+  margin: 0 auto;
+  width: 480px;
+  color: #252932;
+  font-weight: 350;
+}
+
+.inputContainer input {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 10px 12px;
+  border-radius: 2px;
+  line-height: 1.6;
+}
+
+.inputContainer select {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  color: #999999;
+  padding: 10px 12px;
+  border-radius: 2px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.inputContainer button {
+  background-color: #ec6337;
+  color: #ffffff;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.formWord {
+  font-size: 8pt;
+  font-weight: 300;
+}
+
+/*-----------------*/
+
+footer {
+  margin-top: 100px;
+  background-color: #333333;
 }
