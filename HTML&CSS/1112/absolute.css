@@ -1,0 +1,113 @@
+section {
+  margin: 100px auto;
+  padding: 0 50px;
+}
+
+/*-------------*/
+
+.box1 .line {
+  border: 2px solid blue;
+  padding: 100px;
+}
+
+.box1 .middle {
+  position: relative;
+}
+.box1 .inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 123, 123, 0.8);
+}
+
+/*-------------*/
+
+.box2 .line {
+  border: 2px solid blue;
+  padding: 100px;
+}
+
+.box2 .outer {
+  position: relative;
+}
+.box2 .inner {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  background-color: rgba(255, 123, 123, 0.8);
+}
+
+/*-------------------*/
+
+.text-box {
+  max-width: 600px;
+  background-color: #aaa;
+  position: relative;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: #ffa;
+  position: absolute;
+  opacity: 0.6;
+
+  right: 0;
+  top: 0;
+}
+
+/*------------*/
+
+.card {
+  background-color: white;
+  box-shadow: 0px 0px 5px 5px rgba(202, 202, 202, 0.4);
+  background-color: rgb(179, 219, 231);
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.tag-red {
+  background-color: red;
+  color: white;
+  padding: 5px;
+
+  position: absolute;
+  left: -10px;
+  top: 10px;
+
+  border-radius: 10px 0px 10px 0;
+}
+
+.tag-yellow {
+  background-color: yellow;
+  padding: 5px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  border-radius: 0 0 0 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-info {
+  position: relative;
+  padding: 10px;
+}
+
+.card-info span {
+  background-color: yellow;
+  padding: 5px;
+
+  position: absolute;
+  right: 0;
+  top: -34px;
+
+  border-radius: 10px 0 0 0;
+}

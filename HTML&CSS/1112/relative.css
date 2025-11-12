@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.list {
+  margin: 100px auto;
+  max-width: 960px;
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list li {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  margin: 10px;
+  font-size: 30px;
+
+  /* 
+  1.文字置中
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  */
+
+  /* 2.設定文字置中+line-height跟盒子大小一致 */
+  text-align: center;
+  line-height: 100px;
+  z-index: 2;
+}
+
+.list .item13 {
+  position: relative;
+  background-color: brown;
+  bottom: 60px;
+  right: 50px;
+  z-index: 0;
+}
+
+.list .item12 {
+  position: relative;
+  background-color: blue;
+  bottom: 40px;
+  left: 50px;
+  z-index: 1;
+}

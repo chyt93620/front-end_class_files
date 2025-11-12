@@ -10,14 +10,14 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
   border-radius: 10px;
-  width: 1200px;
+  max-width: 1200px;
   padding: 16px 32px;
 }
 
 .company-container {
-  max-width: 1152px;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1136px;
   gap: 20px;
 }
 
@@ -33,17 +33,49 @@ body {
 }
 
 .company-card {
-  gap: 16px;
-  background-color: antiquewhite;
+  background-color: white;
+  border: 1px solid rgb(233, 233, 233);
   border-radius: 10px;
+  width: calc(25% - 15px);
   padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.company-card img {
+.img-title img {
   aspect-ratio: 1/1;
+  width: 25%;
+  border-radius: 8px;
+  flex-shrink: 0;
+  /* 讓圖片不要因為flex被壓縮 */
 }
 
-.company-card div {
+.img-title {
   display: flex;
   gap: 16px;
+  align-items: center;
+}
+
+.img-title a {
+  font-size: 16px;
+  color: #1654b9;
+}
+
+:root {
+  --default-color: green;
+  --aaa: 16px;
+}
+
+/*------------*/
+
+.box {
+  margin: 0 auto 500px;
+  background-color: #e1ffb9;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  box-shadow: 10px 10px 0px 0px rgb(255, 150, 150);
+  border-radius: 10px;
 }
