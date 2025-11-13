@@ -474,3 +474,11 @@ footer {
   background-color: #333333;
   color: #ffffff;
 }
+
+footer img {
+  width: 90px;
+}
+
+.address {
+  margin-top: 10px;
+}
