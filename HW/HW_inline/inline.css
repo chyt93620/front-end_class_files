@@ -43,14 +43,21 @@ body {
   font-size: 15px;
 }
 
-.navBar button {
+.navBar div a:nth-of-type(7) {
   background-color: #da3743;
   color: #fafafa;
+  margin-left: 20px;
+
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
+  line-height: 2;
+
+  border-radius: 50px;
   height: 39px;
   width: 188px;
-  border-radius: 50px;
+
+  display: inline-block;
 }
 
 .navBar img {
@@ -470,15 +477,135 @@ body {
 
 /*--------footer---------*/
 
-footer {
-  background-color: #333333;
-  color: #ffffff;
+/*--------上層----------*/
+.infoContainer {
+  background-color: #252932;
+  color: #e3e6ed;
+  padding: 60px 0px 20px;
 }
 
-footer img {
+.infoBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+}
+/*---------地址區---------*/
+
+.addressBox {
+  width: 260px;
+}
+
+.addressBox img {
   width: 90px;
+  margin-bottom: 30px;
+}
+
+.address h1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 14px;
 }
 
 .address {
-  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 12.3px;
+  line-height: 1.1;
+}
+
+/*---------網站連結區---------*/
+
+.sitemapBox {
+  width: 260px;
+  margin-bottom: 40px;
+}
+.sitemapBox h3 {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.sitemapBox a {
+  border-bottom: 1px solid #384044;
+  padding: 10px 10px 10px 0;
+
+  display: block;
+  width: 100%;
+
+  line-height: 2;
+}
+
+/*---------聯絡資訊與語言區---------*/
+
+.contactAndLang {
+  width: 260px;
+}
+
+.contactUs h3 {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.contactUs {
+  margin-bottom: 40px;
+}
+
+.contactUs p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.lang a,
+.lang p {
+  border-bottom: 1px solid #384044;
+  padding: 10px 10px 10px 0;
+  line-height: 2;
+}
+
+.lang a {
+  display: block;
+}
+
+.lang p {
+  color: #000;
+}
+
+.lang h3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/*--------社群連結區----------*/
+
+.socialMedia a {
+  font-size: 13px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+/*----------最底部------------*/
+
+.infoBottom {
+  background-color: #191c23;
+}
+
+.bottomLink {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 80px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomLink p {
+  font-size: 15px;
+  color: #9ea6b7;
+  display: inline-block;
+}
+
+.bottomIcon {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
 }
