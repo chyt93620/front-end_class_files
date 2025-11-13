@@ -1,3 +1,8 @@
+::selection {
+  background: #ff6e06;
+  color: #ffffff;
+}
+
 hr {
   color: #e3e3e3;
 }
@@ -127,20 +132,20 @@ body {
   line-height: 2;
 }
 
-/*--------第三區--------*/
+/*--------功能介紹標題--------*/
 
-.mainTop3rd {
+.functionTitle {
   text-align: center;
   line-height: 3;
 }
 
-.mainTop3rd h2 {
+.functionTitle h2 {
   color: #ec6300;
   font-weight: 700;
   font-size: 26px;
 }
 
-.mainTop3rd h1 {
+.functionTitle h1 {
   color: #252932;
   font-weight: 700;
   font-size: 32px;
@@ -167,19 +172,19 @@ body {
   margin: 95px 45px 300px 0;
 }
 
-.box {
+.functionBox {
   max-width: 1200px;
   justify-self: center;
 }
 
 /*-----列表------*/
 
-.boxUl {
+.functionList {
   max-width: 560px;
   float: right;
 }
 
-.boxUl h2 {
+.functionList h2 {
   text-align: right;
   margin: 0 400px 60px 0;
   font-size: 24px;
@@ -187,22 +192,22 @@ body {
   color: #064c8c;
 }
 
-.boxUl div {
+.functionList div {
   display: flex;
   line-height: 2;
   color: #252932;
   padding: 0 0 25px;
 }
 
-.boxUl div div {
+.functionList div div {
   flex-wrap: wrap;
 }
-.boxUl div h3 {
+.functionList div h3 {
   font-size: 19px;
   font-weight: 600;
 }
 
-.boxUl div img {
+.functionList div img {
   margin: 7px 30px 0 0;
   width: 44px;
   height: 44px;
@@ -211,7 +216,7 @@ body {
 /*----------求助AI----------*/
 /*----不管怎麼選都選不到指定的區域----*/
 /* 將偶數 .box 裡的 .floatImg 改為向右浮動 */
-.mainFunction > .box:nth-of-type(even) .floatImg {
+.mainFunction > .functionBox:nth-of-type(even) .floatImg {
   float: right;
   margin-left: 45px;
   /* 原先 left 排版是使用 margin-right:45px，向右浮動時改為左邊間距 */
@@ -281,52 +286,77 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-position: 50% 50%;
-  height: 2445.45px;
+
   /*------background img end----------*/
   margin-top: 50px;
-}
-
-.formContainer h1 {
   text-align: center;
-  font-size: 29.3px;
-  font-weight: 700;
-  color: #ff6600;
-  line-height: 2;
 }
 
-.formContainer h1:nth-of-type(2) {
-  color: #252932;
-}
+/*------formContainer(最外層)------*/
 
 .formContainer h2 {
-  text-align: center;
   font-size: 18.6px;
   color: #252932;
   margin: 50px 0;
 }
 
-.form {
+.blueBtn {
+  background-color: #064c8c;
+  color: white;
+  padding: 16px 30px;
+  border-radius: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.orangeH1 {
+  color: #ff6600;
+  font-size: 29.3px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.blackH1 {
+  color: #252932;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 80px 0 50px;
+}
+
+/*-----formBox(中間層)-------*/
+
+.formBox {
   margin: 0 auto;
   max-width: 760px;
-  padding: 75px 10px 100px;
+  padding: 70px 10px 50px;
   background-color: #ffffff;
-  text-align: center;
   border-radius: 20px;
 }
 
-.form h1 {
-  text-align: center;
+.formBox h1 {
   font-size: 26.6px;
   color: #064c8c;
   font-weight: 700;
 }
 
-.formP {
-  text-align: center;
+.formBox p:nth-of-type(3) {
+  line-height: 2;
+  margin-top: 25px;
+  font-weight: 350;
+}
+
+.boldText {
   font-size: 16px;
   color: #252932;
   font-weight: 700;
   line-height: 3.2;
+}
+
+.formBox p:nth-of-type(4) {
+  line-height: 1;
+  font-size: 8pt;
 }
 
 .red {
@@ -337,24 +367,20 @@ body {
   color: #000080;
 }
 
-.form p {
-  line-height: 2;
-  margin-top: 25px;
-  font-weight: 350;
+/*-----form(formBox內層)-------*/
+
+.form {
+  padding: 80px 0 10px;
 }
 
-.inputContainer {
-  padding: 50px 0 10px;
-}
-
-.inputContainer div {
+.form div {
   margin: 0 auto;
   width: 480px;
   color: #252932;
   font-weight: 350;
 }
 
-.inputContainer input {
+.form input {
   display: block;
   margin: 10px auto;
   width: 100%;
@@ -365,7 +391,11 @@ body {
   line-height: 1.6;
 }
 
-.inputContainer select {
+.form ::placeholder {
+  color: #757575;
+}
+
+.form select {
   display: block;
   margin: 10px auto;
   width: 100%;
@@ -375,10 +405,9 @@ body {
   padding: 10px 12px;
   border-radius: 2px;
   line-height: 1.6;
-  text-align: center;
 }
 
-.inputContainer button {
+.form button {
   background-color: #ec6337;
   color: #ffffff;
   border-radius: 20px;
@@ -387,17 +416,61 @@ body {
   font-size: 13px;
   line-height: 1;
   font-weight: 700;
-  margin: 20px;
+  margin: 20px 0;
 }
 
-.formWord {
-  font-size: 8pt;
-  font-weight: 300;
+/*-----phoneTry層(中間層)-------*/
+.phoneTry {
+  max-width: 1200px;
+  padding: 100px 0 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
-/*-----------------*/
+.phoneTry div {
+  padding: 0 20px;
+  width: 50%;
+}
+
+.phoneTry h1 {
+  margin-bottom: 30px;
+  color: #333333;
+  font-size: 21.3px;
+  font-weight: 700;
+}
+.phoneTry p {
+  margin-bottom: 30px;
+  color: #252932;
+  font-size: 14.6px;
+  line-height: 2;
+}
+
+.phoneTry div:nth-of-type(1) {
+  border-right: 1px solid #cbd1dc;
+}
+
+.phoneA {
+  font-size: 24px;
+  font-weight: 700;
+}
+.phoneA:hover {
+  color: #ff6e06;
+}
+
+.tryBtn {
+  background-color: #ec6337;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+
+/*--------footer---------*/
 
 footer {
-  margin-top: 100px;
   background-color: #333333;
+  color: #ffffff;
 }
