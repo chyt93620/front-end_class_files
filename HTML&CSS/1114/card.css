@@ -1,0 +1,79 @@
+section {
+  margin: 100px auto;
+  padding: 0 50px;
+}
+
+/*-----------------*/
+
+.cardContainer {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*------卡片區------*/
+
+.card {
+  background-color: white;
+  box-shadow: 0px 0px 5px 5px rgba(202, 202, 202, 0.4);
+  background-color: rgb(179, 219, 231);
+
+  width: 200px;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.imgDiv {
+  border-radius: 10px 10px 0 0;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.imgDiv img {
+  width: 100%;
+}
+
+.imgDiv::after {
+  content: "Hot";
+  position: absolute;
+
+  background-color: yellow;
+  padding: 2px;
+
+  width: 100px;
+
+  top: -50px;
+  right: -20px;
+
+  transform: rotate(45deg);
+}
+
+/*---標籤區--*/
+
+.tag-red {
+  background-color: red;
+  color: white;
+  padding: 5px;
+
+  position: absolute;
+  left: -10px;
+  top: 10px;
+
+  border-radius: 10px 10px 10px 0;
+}
+
+.tag-red::after {
+  position: absolute;
+  content: " ";
+
+  bottom: -10px;
+  left: 5px;
+
+  transform: translate(-50%);
+
+  border-top: 10px solid rgb(134, 14, 14);
+  border-left: 10px solid rgba(255, 133, 133, 0);
+}
