@@ -7,23 +7,21 @@
 function highestScoreWord(input) {
   const arr = input.trim().split(" "); // .split(" ")把句子拆分成單字陣列，用.trim()去掉頭尾空白
 
-  const result = arr.map(function (n) {
-
-
-
-
-
-
-    
+  const scores = arr.map(function (n) {
+    let total = 0;
+    for (let i = 0; i < n.length; i++) {
+      const score = n.charCodeAt(i) - 96;
+      total = score + total;
+    }
+    return total;
   });
+
+  const maxScore = Math.max(...scores);
+  const index = scores.indexOf(maxScore);
+  return arr[index];
+
 }
 
-const score = Score.charCodeAt(i) - 96;
-
-console.log(aScore, bScore, cScore);
-
-// for (i = 0; i <= n.length; i++) { }
-
-// console.log(highestScoreWord("lorem ipsum dolor sit amet")); // 印出 ipsum
-// console.log(highestScoreWord("heyn i need a rubygem up to build this")); // 印出 rubygem
-// console.log(highestScoreWord("in time machine there are some bugs")); // 印出 there
+console.log(highestScoreWord("lorem ipsum dolor sit amet")); // 印出 ipsum
+console.log(highestScoreWord("heyn i need a rubygem up to build this")); // 印出 rubygem
+console.log(highestScoreWord("in time machine there are some bugs")); // 印出 there
