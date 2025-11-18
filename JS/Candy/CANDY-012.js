@@ -6,9 +6,17 @@
 
 const numberReducer = (num) => {
   // 實作寫在這裡
+  const arr = num
+    .toString()
+    .split("")
+    .map(Number)
+    .reduce((n, total) => n + total);
+
+  //   return arr.length;
+
 };
 
 console.log(numberReducer(9527)); // 印出 5
-console.log(numberReducer(1450)); // 印出 1
-console.log(numberReducer(5566108)); // 印出 4
-console.log(numberReducer(1234567890)); // 印出 9
+// console.log(numberReducer(1450)); // 印出 1
+// console.log(numberReducer(5566108)); // 印出 4
+// console.log(numberReducer(1234567890)); // 印出 9
