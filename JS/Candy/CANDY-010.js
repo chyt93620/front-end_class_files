@@ -5,6 +5,23 @@
 
 function expandedForm(num) {
   // 實作寫在這裡
+  const arr = String(num).split("");
+
+  return arr
+    .map(function (a, index) {
+      const n = arr.length - index - 1;
+
+      if (n == 0) {
+        return a;
+      }
+      if (a === "0") {
+        return "";
+      } else {
+        return `${Math.pow(10, n)} x ${a}`;
+      }
+    })
+    .filter(Boolean)
+    .join(" + ");
 }
 
 console.log(expandedForm(8)); // 印出 8

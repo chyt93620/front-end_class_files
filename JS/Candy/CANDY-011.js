@@ -5,7 +5,22 @@
 //      [5, 5, 8, 8, 8, 4, 4]，`8` 出現了 3  次
 
 function findOddElm(numbers) {
-  // 實作寫在這裡
+  const counts = {};
+
+  for (const n of numbers) {
+    if (counts[n] === undefined) {
+      counts[n] = 1;
+    } else {
+      counts[n] += 1;
+    }
+  }
+  // return counts;
+
+  for (const n in counts) {
+    if (counts[n] % 2 > 0) {
+      return n;
+    }
+  }
 }
 
 console.log(findOddElm([1, 1, 2])); // 印出 2
