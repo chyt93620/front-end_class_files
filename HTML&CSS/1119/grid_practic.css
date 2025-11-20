@@ -1,13 +1,36 @@
 section {
   margin: 100px auto;
   background-color: rgb(199, 199, 199);
+  width: 1100px;
+
+  font-family: Gudea, Heiti, 微軟正黑體, Microsoft JhengHei;
 }
 
-.hot-topics {
+h1 {
+  font-size: 30px;
+  color: #222;
+  font-weight: 700;
+
+}
+
+/*---------焦點話題----------*/
+
+.hot-topics h1::before {
+  content: "";
+  position: absolute;
+
+  border-bottom: 50px solid rgba(250, 128, 114, 0);
+  border-left: 50px solid salmon;
+  
+  z-index:0.5;
+}
+
+
+
+.topics-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px;
 }
 
 .topic {
@@ -17,10 +40,104 @@ section {
   padding: 30px;
 }
 
+.topic-group-01 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
 .topic1 {
   grid-row: 1/4;
 }
 
 .topic2 {
+  grid-row: 1/3;
+}
+
+.topic5 {
+  grid-row: 2/4;
+}
+
+.topic-group-02 {
+  display: grid;
+  gap: 15px;
+}
+
+/*---------日本跟團----------*/
+
+.Japan-tour {
+  height: 475px;
+}
+
+.jp-tour-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.jp-tour-bar ul {
+  display: flex;
+}
+
+.jp-tour-bar li {
+  margin: 0 16px 0;
+}
+
+.jp-tour-grid {
+  display: grid;
+  grid-template-columns: 540px repeat(2, 1fr);
+  gap: 20px;
+  height: 395px;
+}
+
+.tour {
+  background-color: aquamarine;
+  border-radius: 10px;
+
+  padding: 30px;
+}
+
+.tour1 {
+  grid-row: 1/3;
+}
+
+/*-------------------------*/
+
+.Taiwan-spot {
+  display: grid;
+  grid-template-columns: 260px 820px;
+
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "more more";
+
+  gap: 20px;
+}
+
+.tw-spot-bar {
+  display: flex;
+}
+
+.tw-spot-aside ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.spot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.spot {
+  background-color: aquamarine;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.spot1 {
   grid-row: 1/3;
 }
