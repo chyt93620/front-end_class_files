@@ -1,0 +1,53 @@
+.card {
+  background-color: aqua;
+  width: 300px;
+  height: 400px;
+  margin: 100px auto 100px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    background-color: #ffa;
+  }
+}
+
+/*--------------------------*/
+
+.banner {
+  margin: 0 20px;
+}
+
+.banner img {
+  aspect-ratio: 4/1;
+  object-fit: cover;
+}
+
+/*------------------------*/
+
+.box-container {
+  margin: 100px auto;
+  background-color: rgb(153, 153, 153);
+
+  /* 最大1000px，小於1000px就佔視窗80% */
+  width: 80%;
+  max-width: 1000px;
+
+  font-size: 0;
+}
+
+.box {
+  height: 200px;
+  width: calc(50% - 10px);
+
+  display: inline-block;
+  font-size: 30px;
+}
+
+.box1 {
+  background-color: rgb(201, 201, 255);
+  margin-right: 20px;
+}
+
+.box2 {
+  background-color: rgb(255, 245, 151);
+}

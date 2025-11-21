@@ -1,0 +1,134 @@
+.nav {
+  background-color: rgb(145, 162, 199);
+
+  display: flex;
+  justify-content: space-between;
+
+  height: 60px;
+  padding: 5px;
+}
+
+.nav img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+/*----------------第一層-----------------*/
+
+.nav-menu li {
+  position: relative;
+
+  background-color: rgb(88, 112, 185);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 2.5;
+}
+
+/*---底線---*/
+.nav-menu > li:hover {
+  border-bottom: 10px solid rgb(17, 17, 207);
+  position: relative;
+}
+
+/*--------------第二層(選單)--------------*/
+
+/*---選單 hover時顯示---*/
+.nav-menu > li:hover > .second-menu {
+  display: block;
+}
+/*---箭頭---*/
+.nav-menu > li:hover::after {
+  position: absolute;
+  content: "";
+
+  bottom: -25px;
+  left: 15%;
+
+  transform: translate(-50%);
+
+  border-bottom: 15px solid rgb(88, 112, 185);
+  border-left: 10px solid rgba(0, 0, 0, 0);
+  border-right: 10px solid rgba(0, 0, 0, 0);
+}
+
+/*---選單本體---*/
+.second-menu {
+  position: absolute;
+  width: 100px;
+  top: 75px;
+  left: 0;
+  display: none;
+}
+
+.second-menu::before {
+  position: absolute;
+  content: " ";
+  top: -20px;
+  left: 35px;
+
+  transform: translate(-50%);
+
+  border-top: 20px solid rgb(0, 0, 0, 0);
+  border-left: 35px solid rgb(0, 0, 0, 0);
+  border-right: 35px solid rgb(0, 0, 0, 0);
+}
+
+/*---選單li---*/
+.second-menu > li {
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+.second-menu > li:hover {
+  background-color: rgb(36, 45, 160);
+}
+
+/*--------------第三層(選單)--------------*/
+
+.second-menu > li:hover > .third-menu {
+  display: block;
+}
+
+/*---選單本體---*/
+.third-menu {
+  position: absolute;
+  width: 100px;
+  top: 20px;
+  left: 100px;
+  display: none;
+}
+
+/*---選單li---*/
+.third-menu > li {
+  background-color: rgb(204, 129, 129);
+  border-bottom: 2px solid white;
+}
+
+.third-menu > li:hover {
+  background-color: rgb(163, 68, 68);
+}
+
+/*----------------RWD選單---------------*/
+
+
+
+/*------------------------------*/
+
+@media (width<768px) {
+  .icon {
+    position: static;
+    opacity: 1;
+
+    display: inline-block;
+    font-size: 45px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
