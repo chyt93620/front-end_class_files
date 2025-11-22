@@ -1,0 +1,13 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+
+  justify-content: space-between;
+  max-width: 830px;
+}
+
+.card {
+  height: 150px;
+  background-color: #3498db;
+}
