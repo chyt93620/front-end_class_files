@@ -3,9 +3,7 @@
 // 題目：把數字以 10 進位展開式呈現，數字均為大於 0 的正整數
 // 範例：9527 變成 "1000 x 9 + 100 x 5 + 10 x 2 + 7"
 
-function expandedForm(num) {
-  // 實作寫在這裡
-}
+function expandedForm(num) {}
 
 console.log(expandedForm(8)); // 印出 8
 console.log(expandedForm(25)); // 印出 10 x 2 + 5
