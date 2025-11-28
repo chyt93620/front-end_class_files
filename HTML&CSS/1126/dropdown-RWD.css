@@ -143,6 +143,7 @@
     position: absolute;
     opacity: 0;
     height: 0px;
+
   }
 
   #click:checked + .first-dropdown {
